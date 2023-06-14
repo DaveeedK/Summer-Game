@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - cube
-  - sphere
+  - Cube
+  - Sphere
   layers:
   - Default
   - TransparentFX
