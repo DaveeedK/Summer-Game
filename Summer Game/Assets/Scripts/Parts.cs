@@ -18,16 +18,16 @@ public class Parts : MonoBehaviour
     {
         
     }
-
-    void OnTriggerEnter2D(Collider2D other)
+    
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Player") && (gameObject.tag == "cube"))
+        if (collision.gameObject.CompareTag("Player") && (gameObject.tag == "Cube"))
         {
             Destroy(gameObject);
             PartsCounter.instance.IncreaseCubes(value);
         }
 
-        if (other.gameObject.CompareTag("Player") && (gameObject.tag == "sphere"))
+        if (collision.gameObject.CompareTag("Player") && (gameObject.tag == "Sphere"))
         {
             Destroy(gameObject);
             PartsCounter.instance.IncreaseSpheres(value);
