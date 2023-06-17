@@ -22,16 +22,16 @@ public class PartsCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cubeText.text = currentCubes.ToString() + " / 5";
+        cubeText.text = "Cube parts: " +  currentCubes.ToString() + " / 5";
 
-        sphereText.text = currentSpheres.ToString() + " / 5";
+        sphereText.text = "Sphere parts: " + currentSpheres.ToString() + " / 5";
     }
 
     public void IncreaseCubes(int v)
     {
         currentCubes += v;
         cubeText.text = "Cube parts: " + currentCubes.ToString() + " / 5";
-    }
+            }
 
     public void IncreaseSpheres(int v)
     {
